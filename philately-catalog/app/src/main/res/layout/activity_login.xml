@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorCoral"
+    android:scrollbars="none">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorCoral"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif-thin"
+            android:text="@string/title_activity_login_page_line1"
+            android:theme="@style/HugeTextNormal" />
+
+        <ImageButton
+            android:id="@+id/ibFacebookIcon"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/image_facebook_white" />
+
+        <!--<TableRow-->
+        <!--android:id="@+id/hr1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@color/colorWhite" />-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvDividerCenterText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="sans-serif-thin"
+                android:theme="@style/HugeTextNormal"
+                android:text="@string/title_activity_login_page_line2" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dp"
+                android:layout_toLeftOf="@id/tvDividerCenterText"
+                android:background="@color/colorWhite" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="50dp"
+                android:layout_toRightOf="@id/tvDividerCenterText"
+                android:background="@color/colorWhite" />
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/shape_rect_edittext"
+            android:fontFamily="sans-serif-thin"
+            android:theme="@style/MediumTextNormal"
+            android:hint="@string/email" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:inputType="textPassword"
+            android:background="@drawable/shape_rect_edittext"
+            android:fontFamily="sans-serif-thin"
+            android:theme="@style/MediumTextNormal"
+            android:hint="@string/password" />
+
+        <Button
+            android:id="@+id/bLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="sans-serif-thin"
+            android:background="@android:color/transparent"
+            android:theme="@style/MediumTextNormal"
+            android:text="@string/login" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="25dp"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="#FFFFFF" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bForgot"
+                    android:background="@android:color/transparent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-thin"
+                    android:text="@string/forgot"
+                    android:textColor="#FFFFFF" />
+
+                <View
+                    android:id="@+id/vSeparator1"
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/bSignUp"
+                    android:background="@android:color/transparent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-thin"
+                    android:text="@string/sign_up"
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

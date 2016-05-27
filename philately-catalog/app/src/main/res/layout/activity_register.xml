@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorCoral"
+    android:scrollbars="none">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageView
+            android:layout_width="230dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/image_pc_appheader"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-thin"
+            android:theme="@style/HeaderEditTextStyle"
+            android:textAlignment="center"
+            android:text="@string/create_account_text"/>
+
+        <EditText
+            android:id="@+id/etFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorPalePink"
+            android:fontFamily="sans-serif-thin"
+            android:theme="@style/EditTextStyle"
+            android:maxLength="70"
+            android:hint="@string/first_name" />
+
+        <EditText
+            android:id="@+id/etLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorPalePink"
+            android:fontFamily="sans-serif-thin"
+            android:theme="@style/EditTextStyle"
+            android:hint="@string/last_name" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/colorPalePink"
+            android:fontFamily="sans-serif-thin"
+            android:theme="@style/EditTextStyle"
+            android:hint="@string/user_name" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:inputType="textPassword"
+            android:textColor="@color/colorPalePink"
+            android:fontFamily="sans-serif-thin"
+            android:theme="@style/EditTextStyle"
+            android:hint="@string/password" />
+
+        <EditText
+            android:id="@+id/etConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:inputType="textPassword"
+            android:textColor="@color/colorPalePink"
+            android:fontFamily="sans-serif-thin"
+            android:theme="@style/EditTextStyle"
+            android:hint="@string/confirm_password" />
+
+        <!--<EditText-->
+            <!--android:id="@+id/etCountry"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:fontFamily="sans-serif-thin"-->
+            <!--android:theme="@style/EditTextStyle"-->
+            <!--android:hint="@string/country" />-->
+
+        <AutoCompleteTextView
+            android:id="@+id/atvCountry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:singleLine="true"
+            android:textColor="@color/colorPalePink"
+            android:fontFamily="sans-serif-thin"
+            android:theme="@style/EditTextStyle"
+            android:dropDownVerticalOffset="10dp"
+            android:hint="@string/country" />
+
+        <Button
+            android:id="@+id/bSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="sans-serif-thin"
+            android:textStyle="bold"
+            android:theme="@style/ButtonStyle"
+            android:text="@string/sign_up" />
+
+    </LinearLayout>
+</ScrollView>
